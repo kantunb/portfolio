@@ -1,0 +1,77 @@
+/* Penser aux webkit & co */
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700;800&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Almarai', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 4em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    font-weight: 400;
+}
+
+#menu {
+    background-color: white;
+}
+
+#introduction {
+    height: 100vh;
+}
+
+#introduction span {
+    display: block;
+    z-index: -1;
+}
+
+#title {
+    border-left: black solid 2px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.line1, .line2 {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
