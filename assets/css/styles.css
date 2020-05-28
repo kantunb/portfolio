@@ -59,7 +59,6 @@ li {
 
 #intro {
     height: 100vh;
-    margin-left: 10em;
     overflow: hidden;
     
 }
@@ -69,9 +68,7 @@ li {
 }
 
 #title {
-    height: 100%;
     padding-top: 15em;
-    padding-left: 2em;
 }
 
 .line1, .line2 {
@@ -87,4 +84,9 @@ li {
     to {
         margin-left: 0%;
     }
+}
+
+.marginLeft {
+    margin-left: 10em;
+    padding-left: 2em;
 }
