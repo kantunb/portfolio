@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+/* Sroll smoot basique
+    html{
+    scroll-behavior: smooth;
+} */
+
 body {
     font-size: 100%;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -89,4 +94,12 @@ li {
 .marginLeft {
     margin-left: 10em;
     padding-left: 2em;
+}
+
+/* CSS accessibilité */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
