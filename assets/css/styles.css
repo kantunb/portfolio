@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 3em;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
     font-weight: 600;
@@ -51,6 +51,10 @@ li {
     list-style: none;
 }
 
+main {
+    margin-left: 10em;
+}
+
 #menu {
     background-color: white;
     border-right: black solid 2px;
@@ -62,13 +66,17 @@ li {
 
 }
 
-#intro {
+#start, #work, #about, #contact {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#start {
     height: 100vh;
-    overflow: hidden;
     
 }
 
-#intro span {
+#start span {
     display: block;
 }
 
@@ -81,6 +89,23 @@ li {
     animation-name: slidein;
 }
 
+/* Library */
+
+/* Masonry */
+
+.grid-item, .grid-sizer {
+    width: 100%;
+    padding: 5px;
+}
+
+@media (min-width: 768px) {
+    .grid-item, .grid-sizer {
+        width: calc(100% / 3);
+    }
+}
+
+/* Animations */
+
 @keyframes slidein {
     from {
         margin-left: -100%;
@@ -89,11 +114,6 @@ li {
     to {
         margin-left: 0%;
     }
-}
-
-.marginLeft {
-    margin-left: 10em;
-    padding-left: 2em;
 }
 
 /* CSS accessibilité */
