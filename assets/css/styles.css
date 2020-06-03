@@ -14,7 +14,6 @@
 body {
     font-size: 100%;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    position: relative;
 }
 
 img {
@@ -23,7 +22,7 @@ img {
 
 h1 {
     font-family: 'Almarai', Helvetica, Arial, sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     display: block;
     margin-left: 0;
     margin-right: 0;
@@ -51,24 +50,28 @@ li {
     list-style: none;
 }
 
-main {
-    margin-left: 10em;
+figure {
+    margin: 0;
 }
 
-#menu {
-    background-color: white;
-    border-right: black solid 2px;
-    height: 100%;
-    width: 10em;
-    padding-left: 1em;
-    overflow: hidden;
-    position: fixed;
+figure img {
+    position: relative;
+}
 
+figure figcaption {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    font-size: 0.8em;
 }
 
 #start, #work, #about, #contact {
     margin-left: 2em;
     margin-right: 2em;
+}
+
+#menu-desktop {
+    display: none;
 }
 
 #start {
@@ -81,15 +84,20 @@ main {
 }
 
 #title {
-    padding-top: 15em;
+    padding-top: 5em;
 }
 
-.line1, .line2 {
+#line1, #line2, #line3, #line4 {
     animation-duration: 2s;
     animation-name: slidein;
 }
 
-/* Library */
+.modalWork {
+    width: 70vw;
+    height: 80%;
+}
+
+/* ---------- Library ---------- */
 
 /* Masonry */
 
@@ -98,17 +106,21 @@ main {
     padding: 5px;
 }
 
-@media (min-width: 768px) {
-    .grid-item, .grid-sizer {
-        width: calc(100% / 3);
-    }
+/* Fancybox */
+
+#hidden-content {
+    background-image: url(../img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    
 }
 
-/* Animations */
+
+/* ---------- Animations ---------- */
 
 @keyframes slidein {
     from {
-        margin-left: -100%;
+        margin-left: -180%;
     }
 
     to {
@@ -116,7 +128,84 @@ main {
     }
 }
 
-/* CSS accessibilité */
+/* ---------- Media Queries ---------- */
+
+/* Par défaut mobil portrait */
+
+/* ~544px pour 16px de font-size par défaut
+Petits ecrans: mobile paysage */
+@media(min-width: 34em){
+    .grid-item, .grid-sizer {
+        width: calc(100% / 2);
+    }
+}
+
+/* ~768px pour 16px de font-size par défaut
+Ecrans moyens: tablette */
+@media(min-width: 48em){    
+    main {
+        margin-left: 10em;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    #menu-desktop {
+        display: block;
+        background-color: white;
+        border-right: black solid 2px;
+        height: 100%;
+        width: 10em;
+        padding-left: 1em;
+        overflow: hidden;
+        position: fixed;
+    
+    }    
+
+    #title {
+        padding-top: 10em;
+    }    
+
+    .grid-item, .grid-sizer {
+        width: calc(100% / 2);
+    }
+}
+
+/* ~992px pour 16px de font-size par défaut
+Ecrans larges: desktop */
+@media(min-width: 62em){
+
+    h1 {
+        font-size: 6em;
+    }
+
+    #title {
+        padding-top: 5em;
+    }
+    
+    .grid-item, .grid-sizer {
+        width: calc(100% / 3);
+    }
+}
+
+/* ~1200px pour 16px de font-size par défaut
+Ecrans très large: desktop large */
+@media(min-width: 75em){
+
+    h1 {
+        font-size: 8em;
+    }
+
+    #title {
+        padding-top: 1em;
+    }
+    .grid-item, .grid-sizer {
+        width: calc(100% / 4);
+    }
+}
+
+/* ---------- CSS accessibilité ---------- */
 
 @media (prefers-reduced-motion: reduce) {
   html {
