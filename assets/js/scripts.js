@@ -12,13 +12,24 @@ window.onload = function () {
         });
     });
 
-    // Masonry
+    // Isotope
 
-    $('.grid').masonry({
+    $('.grid').isotope({
         // options
         itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        percentPosition: true
+        layoutMode: 'masonry'
+    });
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+        // options
+    });
+    // filter items on button click
+    $('.filter-button-group').on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({
+            filter: filterValue
+        });
     });
 
 };

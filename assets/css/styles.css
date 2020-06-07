@@ -101,9 +101,13 @@ figure figcaption {
 
 /* Masonry */
 
-.grid-item, .grid-sizer {
-    width: 100%;
+.grid-item {
+    width: 25%;
     padding: 5px;
+}
+
+.grid-item--width2 {
+    width: 50%;
 }
 
 /* Fancybox */

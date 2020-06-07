@@ -27,7 +27,7 @@
 			<div id="menu-desktop">
 				<h3>Menu</h3>
 				<ul>
-					<li><a href="#intro" class="scrollTo">\start</a></li>
+					<li><a href="#start" class="scrollTo">\start</a></li>
 					<li><a href="#work" class="scrollTo">\work</a></li>
 					<li><a href="#about" class="scrollTo">\about</a></li>
 					<li><a href="#contact" class="scrollTo">\contact</a></li>
@@ -52,10 +52,18 @@
 		<!-- WORK section -->
 		<section id="work">
 			<h2>\ work</h2>
+
+			<div class="button-group filter-button-group">
+				<button class=" btn btn-primary ml-1 mb-3" data-filter="*">show all</button>
+				<button class=" btn btn-primary ml-1 mb-3" data-filter=".web">web</button>
+				<button class=" btn btn-primary ml-1 mb-3" data-filter=".video">video</button>
+				<button class=" btn btn-primary ml-1 mb-3" data-filter=":not(.transition)">not transition</button>
+				<button class=" btn btn-primary ml-1 mb-3" data-filter=".web:not(.transition)">metal but not transition</button>
+			  </div>
+
 			<div class="grid">
-				<div class="grid-sizer"></div>
 				
-				<div class="grid-item">
+				<div class="grid-item web">
 					<a data-fancybox="gallery" data-src="#hidden-content" href="javascript:;">
 						<figure>
 							<img src="./assets/img/1.jpg" alt="1">
@@ -67,39 +75,39 @@
 						<p class="modalSkills">\ Html5 \ CSS3 \ Javascript \ jQuery \ Masonry \ Fancybox</p>
 						<button class="moreWork">more +</button>
 					</div>
-				</div>
+				</div>				  
 				
-				<div class="grid-item">
+				<div class="grid-item web">
 					<a data-fancybox="gallery" href="./assets/img/2.jpg"><img src="./assets/img/2.jpg" alt="1"></a>
 				</div>
-				<div class="grid-item">
+				<div class="grid-item video">
 					<a data-fancybox="gallery" href="./assets/img/3.jpg"><img src="./assets/img/3.jpg" alt="1"></a>
 				</div>
-				<div class="grid-item">
+				<div class="grid-item video">
 					<a data-fancybox="gallery" href="./assets/img/4.jpg"><img src="./assets/img/4.jpg" alt="1"></a>
 				</div>
-				<div class="grid-item">
+				<div class="grid-item web">
 					<a data-fancybox="gallery" href="./assets/img/5.jpg"><img src="./assets/img/5.jpg" alt="1"></a>
 				</div>
-				<div class="grid-item">
+				<div class="grid-item video">
 					<a data-fancybox="gallery" href="./assets/img/6.jpg"><img src="./assets/img/6.jpg" alt="1"></a>
 				</div>
-				<div class="grid-item">
+				<div class="grid-item web">
 					<a data-fancybox="gallery" href="./assets/img/1.jpg"><img src="./assets/img/1.jpg" alt="1"></a>
 				</div>
-				<div class="grid-item">
+				<div class="grid-item video">
 					<a data-fancybox="gallery" href="./assets/img/2.jpg"><img src="./assets/img/2.jpg" alt="1"></a>
 				</div>
-				<div class="grid-item">
+				<div class="grid-item web">
 					<a data-fancybox="gallery" href="./assets/img/3.jpg"><img src="./assets/img/3.jpg" alt="1"></a>
 				</div>
-				<div class="grid-item">
+				<div class="grid-item web">
 					<a data-fancybox="gallery" href="./assets/img/4.jpg"><img src="./assets/img/4.jpg" alt="1"></a>
 				</div>
-				<div class="grid-item">
+				<div class="grid-item video">
 					<a data-fancybox="gallery" href="./assets/img/5.jpg"><img src="./assets/img/5.jpg" alt="1"></a>
 				</div>
-				<div class="grid-item">
+				<div class="grid-item web">
 					<a data-fancybox="gallery" href="./assets/img/6.jpg"><img src="./assets/img/6.jpg" alt="1"></a>
 				</div>
 			</div>
@@ -138,8 +146,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
-	<!-- Masonry -->
-	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+	<!-- Isotope -->
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<!-- Fancybox -->
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<!-- Specific JavaScript -->
