@@ -11,6 +11,7 @@
     scroll-behavior: smooth;
 } */
 
+
 body {
     font-size: 100%;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -65,7 +66,8 @@ figure figcaption {
     font-size: 0.8em;
 }
 
-#start, #work, #about, #contact {
+#start_section, #work_section, #skills_section, #about_section, #contact_section {
+    min-height: 100vh;
     margin-left: 2em;
     margin-right: 2em;
 }
@@ -74,12 +76,7 @@ figure figcaption {
     display: none;
 }
 
-#start {
-    height: 100vh;
-    
-}
-
-#start span {
+#start_section span {
     display: block;
 }
 
@@ -92,10 +89,42 @@ figure figcaption {
     animation-name: slidein;
 }
 
+#contact_section {
+    display: flex;
+    margin-right: 0em;
+}
+
+#contact_form {
+    width: 35%;
+}
+
 .modalWork {
     width: 70vw;
     height: 80%;
 }
+
+#map {
+    min-height: 100vh;
+    width: 65%;
+    margin-left: 2em;
+    margin-right: 0em;
+    position: relative;
+}
+
+.box_fixed {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+    z-index: 10;
+    padding: 1em;
+}
+
+.box_fixed p {
+    margin: 0;
+}
+
 
 /* ---------- Library ---------- */
 
@@ -119,6 +148,12 @@ figure figcaption {
     
 }
 
+/* Leaflet */
+
+#mapid {
+    min-height: 100vh;
+    z-index: 0;
+}
 
 /* ---------- Animations ---------- */
 

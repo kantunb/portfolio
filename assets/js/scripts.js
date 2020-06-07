@@ -32,4 +32,19 @@ window.onload = function () {
         });
     });
 
+    // Leaflet
+
+    var mymap = L.map('mapid').setView([45.7745, 4.8321], 13);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia2FudGJ4dHMiLCJhIjoiY2tiNTVtMHRkMGwwNTJ4bXp1dGoyNG1xZyJ9.5Q5dHR2mRLZ0fYYOjZOGsA', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/light-v10',
+        tileSize: 512,
+        zoomOffset: -1,
+        // accessToken: 'pk.eyJ1Ijoia2FudGJ4dHMiLCJhIjoiY2tiNTVtMHRkMGwwNTJ4bXp1dGoyNG1xZyJ9.5Q5dHR2mRLZ0fYYOjZOGsA'
+    }).addTo(mymap);
+
+    var marker = L.marker([45.775562, 4.83452]).addTo(mymap);
+    
 };

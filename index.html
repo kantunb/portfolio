@@ -14,6 +14,10 @@
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<!-- Fancybox CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<!-- Leaflet CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+		crossorigin="" />
 	<!-- CSS perso -->
 	<link rel="stylesheet" href="./assets/css/styles.css">
 
@@ -27,10 +31,11 @@
 			<div id="menu-desktop">
 				<h3>Menu</h3>
 				<ul>
-					<li><a href="#start" class="scrollTo">\start</a></li>
-					<li><a href="#work" class="scrollTo">\work</a></li>
-					<li><a href="#about" class="scrollTo">\about</a></li>
-					<li><a href="#contact" class="scrollTo">\contact</a></li>
+					<li><a href="#start_section" class="scrollTo">\ start</a></li>
+					<li><a href="#work_section" class="scrollTo">\ work</a></li>
+					<li><a href="#skills_section" class="scrollTo">\ skills</a></li>
+					<li><a href="#about_section" class="scrollTo">\ about</a></li>
+					<li><a href="#contact_section" class="scrollTo">\ contact</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -38,31 +43,29 @@
 
 	<main>
 		<!-- START section -->
-		<section id="start">
+		<section id="start_section">
 			<div id="title">
 				<h1>
 					<span id="line1">Hi,</span>
 					<span id="line2">I'm Quentin B.</span>
 					<span id="line3">and this is</span>
-					<span id="line4">what I <a id="enter" href="#work" class="scrollTo">do</a></span>
+					<span id="line4">what I <a id="enter" href="#work_section" class="scrollTo">do</a></span>
 				</h1>
 			</div>
 		</section>
 
 		<!-- WORK section -->
-		<section id="work">
+		<section id="work_section">
 			<h2>\ work</h2>
 
 			<div class="button-group filter-button-group">
 				<button class=" btn btn-primary ml-1 mb-3" data-filter="*">show all</button>
 				<button class=" btn btn-primary ml-1 mb-3" data-filter=".web">web</button>
 				<button class=" btn btn-primary ml-1 mb-3" data-filter=".video">video</button>
-				<button class=" btn btn-primary ml-1 mb-3" data-filter=":not(.transition)">not transition</button>
-				<button class=" btn btn-primary ml-1 mb-3" data-filter=".web:not(.transition)">metal but not transition</button>
-			  </div>
+			</div>
 
 			<div class="grid">
-				
+
 				<div class="grid-item web">
 					<a data-fancybox="gallery" data-src="#hidden-content" href="javascript:;">
 						<figure>
@@ -75,8 +78,8 @@
 						<p class="modalSkills">\ Html5 \ CSS3 \ Javascript \ jQuery \ Masonry \ Fancybox</p>
 						<button class="moreWork">more +</button>
 					</div>
-				</div>				  
-				
+				</div>
+
 				<div class="grid-item web">
 					<a data-fancybox="gallery" href="./assets/img/2.jpg"><img src="./assets/img/2.jpg" alt="1"></a>
 				</div>
@@ -119,19 +122,58 @@
 		</section>
 
 		<!-- ABOUT section -->
-		<section id="about">
-			<h2>\ about</h2>
+		<section id="skills_section">
+			<h2>\ skills</h2>
 			<div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque nulla inventore iste
 				provident repudiandae illum ratione sit! Quaerat accusantium veniam porro enim magni, adipisci sequi
 				voluptatum, fugit velit temporibus eius.</div>
 		</section>
+		<!-- ABOUT section -->
+		<section id="about_section">
+			<h2>\ about</h2>
+			<p>Je me suis lancé debut 2020 dans une formation accélérée en développement web, c’est passionnant,
+				motivant, déroutant aussi quand on revient aux études après quelques années dans le monde du
+				travail.<br />
+				Et oui, je ne suis pas un tout jeune étudiant mais plutôt un trentenaire qui a un peu roulé sa bosse en
+				production et communication (musique principalement), réalisation video avec une touche
+				d’entrepreneuriat pendant quelques années.<br />
+				Jetez un oeil à mon <a href="https://www.linkedin.com/in/quentinbrouillet/"
+					target="_blank" rel="noopener noreferrer">Linkedin</a>, ce sera plus pertinent qu’une longue
+				démonstration auto-centrée.</p>
+		</section>
 
 		<!-- CONTACT section -->
-		<section id="contact">
-			<h2>\ contact</h2>
-			<div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque nulla inventore iste
-				provident repudiandae illum ratione sit! Quaerat accusantium veniam porro enim magni, adipisci sequi
-				voluptatum, fugit velit temporibus eius.</div>
+		<section id="contact_section">
+			<div id="contact_form">
+				<h2>\ contact</h2>
+				<p>Vous avez un projet, besoin d'un developpeur junior ou simplement envie de partager une idée ?
+					Utiliser le formulaire ci-dessous pour me contacter, je vous repondrai rapidement.</p>
+				<form id="contact" autocomplete="off" action="#" method="post">
+					<li class="half">
+						<input type="text" placeholder="Nom" />
+						<input type="email" name="" id="" placeholder="Email" />
+					</li>
+					<li>
+						<input type="text" placeholder="Sujet" />
+					</li>
+					<li>
+						<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+					</li>
+					<li>
+						<input type="submit" value="" />
+					</li>
+				</form>
+			</div>
+			<div id="map">
+				<div class="box_fixed">
+					<p>Quentin Brouillet<br />
+					16 rue d'Austerlitz<br />
+					69004 Lyon - France<br />
+					@ quentin@brouillet.fr</p>
+				</div>
+				<div id="mapid"></div>
+
+			</div>
 		</section>
 
 	</main>
@@ -146,10 +188,14 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
-	<!-- Isotope -->
+	<!-- Isotope JS -->
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-	<!-- Fancybox -->
+	<!-- Fancybox JS -->
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<!-- Leaflet JS -->
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+		crossorigin=""></script>
 	<!-- Specific JavaScript -->
 	<script src="./assets/js/scripts.js" async></script>
 
