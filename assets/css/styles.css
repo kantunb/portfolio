@@ -47,6 +47,16 @@ h3 {
     font-weight: 400;
 }
 
+a {
+    color: grey;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
 li {
     list-style: none;
 }
@@ -131,8 +141,8 @@ figure figcaption {
 /* Masonry */
 
 .grid-item {
-    width: 25%;
-    padding: 5px;
+    width: 100%;
+    padding: 0px;
 }
 
 .grid-item--width2 {
@@ -142,7 +152,7 @@ figure figcaption {
 /* Fancybox */
 
 #hidden-content {
-    background-image: url(../img/1.jpg);
+    background-image: url(../img/youcantbuybuy_website.jpg);
     background-position: center;
     background-size: cover;
     
@@ -192,15 +202,25 @@ Ecrans moyens: tablette */
 
     #menu-desktop {
         display: block;
-        background-color: white;
+        background-color: black;
         border-right: black solid 2px;
         height: 100%;
         width: 10em;
         padding-left: 1em;
         overflow: hidden;
         position: fixed;
-    
-    }    
+        color: white;
+    }
+
+    #menu-desktop a{
+        color: grey;
+    }
+
+    #menu-desktop a:hover{
+        font-weight: 600;
+        text-decoration: none;
+    }
+
 
     #title {
         padding-top: 10em;
