@@ -47,6 +47,11 @@ h3 {
     font-weight: 400;
 }
 
+h4:first-child {
+    margin: 0;
+    padding-right: 5px;
+}
+
 a {
     color: grey;
 }
@@ -63,17 +68,21 @@ li {
 
 figure {
     margin: 0;
-}
-
-figure img {
     position: relative;
 }
 
-figure figcaption {
-    position: absolute;
-    bottom: 1em;
-    left: 1em;
+figure figcaption, .modalTitle, .modalSkills {
+    color: white;
+    align-items: flex-end;
+    margin-bottom: 0.8em;;
+}
+
+figure figcaption, .modalSkills {
     font-size: 0.8em;
+}
+
+.modalSkills {
+    margin-bottom: 0em;
 }
 
 #start_section, #work_section, #skills_section, #about_section, #contact_section {
@@ -111,6 +120,34 @@ figure figcaption {
 .modalWork {
     width: 70vw;
     height: 80%;
+}
+
+.workTitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.5em;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+.plus {
+    display: block;
+    margin: auto;
+}
+
+.arrow {
+    background-color: white;
+    margin: -8px 0px;
+    padding: 0px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.arrow i {
+    padding: 0px;
+    text-align: center;
 }
 
 #map {
@@ -151,11 +188,13 @@ figure figcaption {
 
 /* Fancybox */
 
-#hidden-content {
-    background-image: url(../img/youcantbuybuy_website.jpg);
-    background-position: center;
-    background-size: cover;
-    
+.fancybox-slide--html .fancybox-close-small {
+    color:white;
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+.fancybox-content {
+    overflow: hidden;
 }
 
 /* Leaflet */
@@ -229,6 +268,15 @@ Ecrans moyens: tablette */
     .grid-item, .grid-sizer {
         width: calc(100% / 2);
     }
+    
+    .workTitle:first-child {
+        margin: 0;
+        padding-right: 15px;
+    }    
+
+    .arrow {
+        font-size: 1.5rem;
+    }    
 }
 
 /* ~992px pour 16px de font-size par défaut

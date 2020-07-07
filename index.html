@@ -70,36 +70,60 @@
 					<a data-fancybox="gallery" data-src="#hidden-content" href="javascript:;">
 						<figure>
 							<img src="./assets/img/youcantbuybuy_website.jpg" alt="Site web Youcanbuybuy">
-							<figcaption>Youcantbuybuy website</figcaption>
+							<div class="workTitle">
+								<figcaption>Youcantbuybuy</figcaption>
+							</div>
 						</figure>
 					</a>
-					<div style="display: none; background-image: url(./assets/img/youcantbuybuy_website.jpg);" id="hidden-content" class="modalWork">
-						<h2 class="modalTitle">Youcantbuybuy website</h2>
-						<p class="modalSkills">\ Html5 \ CSS3 \ Javascript \ jQuery \ Masonry \ Fancybox</p>
-						<button class="moreWork">more +</button>
+					<div style="display: none; background-image: url(./assets/img/youcantbuybuy_website.jpg);"
+						id="hidden-content" class="modalWork">
+						<div class="workTitle container">
+							<!-- TOFIX Scroolbar horizontale en sm -->
+							<div class="row">
+								<div class="col-12 col-sm-11">
+									<div class="modalTitle d-md-flex">
+										<h4>Youcantbuybuy website</h4><small>- projet en cours -</small>
+									</div>
+									<p class="modalSkills">
+										Développement d'un site vitrine pour le photographe Kevin Buy<br />
+										\ Html5 \ CSS3 \ Javascript \ jQuery \ Masonry \ Fancybox
+									</p>
+									<button class="plus d-sm-none btn btn-light btn-sm">+</button>
+								</div>
+								<div class="arrow d-none d-sm-flex offset-11 col-1 offset-sm-0">
+									<i
+										class="fas fa-arrow-right moreWork col-12"></i>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<div class="grid-item video">
-					<a data-fancybox="gallery" href="./assets/img/deambulons.png"><img src="./assets/img/deambulons.png" alt="1"></a>
+					<a data-fancybox="gallery" href="./assets/img/deambulons.png"><img src="./assets/img/deambulons.png"
+							alt="1"></a>
 				</div>
 				<div class="grid-item video">
 					<a data-fancybox="gallery" href="./assets/img/4.jpg"><img src="./assets/img/4.jpg" alt="1"></a>
 				</div>
 				<div class="grid-item web">
-					<a data-fancybox="gallery" href="./assets/img/faurecia-corpo.png"><img src="./assets/img/faurecia-corpo.png" alt="1"></a>
+					<a data-fancybox="gallery" href="./assets/img/faurecia-corpo.png"><img
+							src="./assets/img/faurecia-corpo.png" alt="1"></a>
 				</div>
 				<div class="grid-item web">
-					<a data-fancybox="gallery" href="./assets/img/le_bon_tri.png"><img src="./assets/img/le_bon_tri.png" alt="1"></a>
+					<a data-fancybox="gallery" href="./assets/img/le_bon_tri.png"><img src="./assets/img/le_bon_tri.png"
+							alt="1"></a>
 				</div>
 				<div class="grid-item web">
-					<a data-fancybox="gallery" href="./assets/img/faurecia-formation.png"><img src="./assets/img/faurecia-formation.png" alt="1"></a>
+					<a data-fancybox="gallery" href="./assets/img/faurecia-formation.png"><img
+							src="./assets/img/faurecia-formation.png" alt="1"></a>
 				</div>
 				<div class="grid-item video">
 					<a data-fancybox="gallery" href="./assets/img/5.jpg"><img src="./assets/img/5.jpg" alt="1"></a>
 				</div>
 				<div class="grid-item web">
-					<a data-fancybox="gallery" href="./assets/img/nestle.png"><img src="./assets/img/nestle.png" alt="1"></a>
+					<a data-fancybox="gallery" href="./assets/img/nestle.png"><img src="./assets/img/nestle.png"
+							alt="1"></a>
 				</div>
 			</div>
 
@@ -198,6 +222,8 @@
 	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
 		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
 		crossorigin=""></script>
+	<!-- Fontawesome JS -->
+	<script src="https://kit.fontawesome.com/d099b76721.js" crossorigin="anonymous"></script>
 	<!-- Specific JavaScript -->
 	<script src="./assets/js/scripts.js" async></script>
 
