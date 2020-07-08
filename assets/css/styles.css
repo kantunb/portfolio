@@ -145,9 +145,10 @@ figure figcaption, .modalSkills {
     align-items: center;
 }
 
-.arrow i {
-    padding: 0px;
+.arrow a {
+    display: block;
     text-align: center;
+    width: 100%;
 }
 
 #map {
@@ -223,9 +224,7 @@ figure figcaption, .modalSkills {
 /* ~544px pour 16px de font-size par défaut
 Petits ecrans: mobile paysage */
 @media(min-width: 34em){
-    .grid-item, .grid-sizer {
-        width: calc(100% / 2);
-    }
+    
 }
 
 /* ~768px pour 16px de font-size par défaut
@@ -307,9 +306,7 @@ Ecrans très large: desktop large */
     #title {
         padding-top: 1em;
     }
-    .grid-item, .grid-sizer {
-        width: calc(100% / 4);
-    }
+    
 }
 
 /* ---------- CSS accessibilité ---------- */
