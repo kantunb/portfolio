@@ -81,6 +81,9 @@ figure figcaption, .modalSkills {
     font-size: 0.8em;
 }
 
+input, textarea {
+    margin-top: 1em;
+}
 .modalSkills {
     margin-bottom: 0em;
 }

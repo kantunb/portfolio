@@ -1,3 +1,9 @@
+<?php
+
+include __DIR__ . '/assets/php/_general.php';
+
+?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -10,14 +16,11 @@
 	<!-- KNACSS CSS
 	<link rel="stylesheet" href="https://raw.githubusercontent.com/raphaelgoetter/KNACSS/master/css/knacss.css" /> -->
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<!-- Fancybox CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<!-- Leaflet CSS -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-		crossorigin="" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
 	<!-- CSS perso -->
 	<link rel="stylesheet" href="./assets/css/styles.css">
 
@@ -42,6 +45,7 @@
 	</header>
 
 	<main>
+
 		<!-- START section -->
 		<section id="start_section">
 			<div id="title">
@@ -75,8 +79,7 @@
 							</div>
 						</figure>
 					</a>
-					<div style="display: none; background-image: url(./assets/img/youcantbuybuy_website.jpg);"
-						id="youcantbuybuy" class="modalWork">
+					<div style="display: none; background-image: url(./assets/img/youcantbuybuy_website.jpg);" id="youcantbuybuy" class="modalWork">
 						<div class="workTitle container">
 							<div class="row">
 								<div class="col-12 col-sm-11">
@@ -102,8 +105,7 @@
 							</div>
 						</figure>
 					</a>
-					<div style="display: none; background-image: url(./assets/img/deambulons.png);"
-						id="deambulons" class="modalWork">
+					<div style="display: none; background-image: url(./assets/img/deambulons.png);" id="deambulons" class="modalWork">
 						<div class="workTitle container">
 							<div class="row">
 								<div class="col-12 col-sm-11">
@@ -134,8 +136,7 @@
 							</div>
 						</figure>
 					</a>
-					<div style="display: none; background-image: url(/assets/img/4.jpg);"
-						id="duBeauBoulot" class="modalWork">
+					<div style="display: none; background-image: url(/assets/img/4.jpg);" id="duBeauBoulot" class="modalWork">
 						<div class="workTitle container">
 							<div class="row">
 								<div class="col-12 col-sm-11">
@@ -166,8 +167,7 @@
 							</div>
 						</figure>
 					</a>
-					<div style="display: none; background-image: url(./assets/img/faurecia-corpo.png);"
-						id="faureciaCorpo" class="modalWork">
+					<div style="display: none; background-image: url(./assets/img/faurecia-corpo.png);" id="faureciaCorpo" class="modalWork">
 						<div class="workTitle container">
 							<div class="row">
 								<div class="col-12 col-sm-11">
@@ -198,8 +198,7 @@
 							</div>
 						</figure>
 					</a>
-					<div style="display: none; background-image: url(./assets/img/le_bon_tri.png);"
-						id="faureciaCorpo" class="modalWork">
+					<div style="display: none; background-image: url(./assets/img/le_bon_tri.png);" id="faureciaCorpo" class="modalWork">
 						<div class="workTitle container">
 							<div class="row">
 								<div class="col-12 col-sm-11">
@@ -223,19 +222,16 @@
 
 
 				<div class="grid-item web">
-					<a data-fancybox="gallery" href="./assets/img/le_bon_tri.png"><img src="./assets/img/le_bon_tri.png"
-							alt="1"></a>
+					<a data-fancybox="gallery" href="./assets/img/le_bon_tri.png"><img src="./assets/img/le_bon_tri.png" alt="1"></a>
 				</div>
 				<div class="grid-item web">
-					<a data-fancybox="gallery" href="./assets/img/faurecia-formation.png"><img
-							src="./assets/img/faurecia-formation.png" alt="1"></a>
+					<a data-fancybox="gallery" href="./assets/img/faurecia-formation.png"><img src="./assets/img/faurecia-formation.png" alt="1"></a>
 				</div>
 				<div class="grid-item video">
 					<a data-fancybox="gallery" href="./assets/img/5.jpg"><img src="./assets/img/5.jpg" alt="1"></a>
 				</div>
 				<div class="grid-item web">
-					<a data-fancybox="gallery" href="./assets/img/nestle.png"><img src="./assets/img/nestle.png"
-							alt="1"></a>
+					<a data-fancybox="gallery" href="./assets/img/nestle.png"><img src="./assets/img/nestle.png" alt="1"></a>
 				</div>
 			</div>
 
@@ -275,8 +271,7 @@
 				Et oui, je ne suis pas un tout jeune étudiant mais plutôt un trentenaire qui a un peu roulé sa bosse en
 				production et communication (musique principalement), réalisation video avec une touche
 				d’entrepreneuriat pendant quelques années.<br />
-				Jetez un oeil à mon <a href="https://www.linkedin.com/in/quentinbrouillet/" target="_blank"
-					rel="noopener noreferrer">Linkedin</a>, ce sera plus pertinent qu’une longue
+				Jetez un oeil à mon <a href="https://www.linkedin.com/in/quentinbrouillet/" target="_blank" rel="noopener noreferrer">Linkedin</a>, ce sera plus pertinent qu’une longue
 				démonstration auto-centrée.</p>
 		</section>
 
@@ -284,22 +279,39 @@
 		<section id="contact_section">
 			<div id="contact_form">
 				<h2>\ contact</h2>
-				<p>Vous avez un projet, besoin d'un developpeur junior ou simplement envie de partager une idée ?
-					Utiliser le formulaire ci-dessous pour me contacter, je vous repondrai rapidement.</p>
-				<form id="contact" autocomplete="off" action="#" method="post">
-					<li class="half">
-						<input type="text" placeholder="Nom" />
-						<input type="email" name="" id="" placeholder="Email" />
+
+				<?php if (array_key_exists('errors', $_SESSION)) : ?>
+					<div class="alert alert-danger" role="alert">
+						<?= implode('<br />', $_SESSION['errors']); ?>
+					</div>
+				<?php elseif (array_key_exists('success', $_SESSION)) : ?>
+					<div class="alert alert-success" role="alert">
+						Votre message a bien été envoyé
+					</div>
+				<?php endif ?>
+
+				<form id="contact" autocomplete="on" action="./assets/php/contact.php" method="POST">
+					<?php $form = new Form ?>
+					<div class="half">
+						<?= $form->text('name', 'Nom') ?>
+						<?= $form->email('email', 'Email'); ?>
+						<?= $form->text('subject', 'Sujet'); ?>
+						<?= $form->textarea('message', '30', '10', 'Message'); ?>
+						<input type="submit" value="Envoyer" class="btn btn-dark" />
+				</div>
+					<!-- <li class="half">
+						<input type="text" class="form-control" placeholder="Nom" name="name" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : '' ?>" required />
+						<input type="email" class="form-control" name="email" id="" placeholder="Email" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : '' ?>" required />
 					</li>
 					<li>
-						<input type="text" placeholder="Sujet" />
+						<input type="text" class="form-control" placeholder="Sujet" name="subject" value="<?= isset($_SESSION['inputs']['subject']) ? $_SESSION['inputs']['subject'] : '' ?>" required />
 					</li>
 					<li>
-						<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+						<textarea name="message" class="form-control" id="" cols="30" rows="10" placeholder="Message" required /><?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : '' ?></textarea>
 					</li>
 					<li>
-						<input type="submit" value="" />
-					</li>
+						<input type="submit" value="Envoyer" class="btn btn-dark" />
+					</li> -->
 				</form>
 			</div>
 			<div id="map">
@@ -310,7 +322,6 @@
 						@ quentin@brouillet.fr</p>
 				</div>
 				<div id="mapid"></div>
-
 			</div>
 		</section>
 
@@ -318,22 +329,17 @@
 
 	<footer></footer>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
 	<!-- Isotope JS -->
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<!-- Fancybox JS -->
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<!-- Leaflet JS -->
-	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-		crossorigin=""></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 	<!-- Fontawesome JS -->
 	<script src="https://kit.fontawesome.com/d099b76721.js" crossorigin="anonymous"></script>
 	<!-- Specific JavaScript -->
@@ -342,3 +348,9 @@
 </body>
 
 </html>
+
+<?php
+unset($_SESSION['errors']);
+unset($_SESSION['inputs']);
+unset($_SESSION['success']);
+?>
