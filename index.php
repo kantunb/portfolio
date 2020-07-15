@@ -7,74 +7,68 @@ include __DIR__ . '/assets/php/_general.php';
 <!doctype html>
 <html lang="fr">
 
-	<head>
-		<title>Portfolio Quentin B.</title>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+	<title>Portfolio Quentin B.</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- KNACSS CSS
-				<link rel="stylesheet" href="https://raw.githubusercontent.com/raphaelgoetter/KNACSS/master/css/knacss.css" /> -->
-		<!-- Bootstrap CSS -->
-		<link
-		rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> <!-- Fancybox CSS -->
-		<link
-		rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
-		<!-- Leaflet CSS -->
-		<link
-		rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
-		<!-- Font Awesome CSS -->
-		<link
-		rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- CSS perso -->
-		<link rel="stylesheet" href="./assets/css/styles.css">
+	<!-- KNACSS CSS
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/raphaelgoetter/KNACSS/master/css/knacss.css" /> -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- Fancybox CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<!-- Leaflet CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+	<!-- CSS perso -->
+	<link rel="stylesheet" href="./assets/css/styles.css">
 
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<header>
-			<nav>
-				<!-- DESKTOP menu -->
-				<div id="menu-desktop">
-					<h3>Menu</h3>
-					<ul>
-						<li><a href="#start_section" class="scrollTo">\ start</a></li>
-						<li><a href="#work_section" class="scrollTo">\ work</a></li>
-						<li><a href="#skills_section" class="scrollTo">\ skills</a></li>
-						<li><a href="#about_section" class="scrollTo">\ about</a></li>
-						<li><a href="#contact_section" class="scrollTo">\ contact</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+	<header>
+		<nav>
+			<!-- DESKTOP menu -->
+			<div id="menu-desktop">
+				<h3>Menu</h3>
+				<ul>
+					<li><a href="#start_section" class="scrollTo">\ start</a></li>
+					<li><a href="#work_section" class="scrollTo">\ work</a></li>
+					<li><a href="#skills_section" class="scrollTo">\ skills</a></li>
+					<li><a href="#about_section" class="scrollTo">\ about</a></li>
+					<li><a href="#contact_section" class="scrollTo">\ contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
-		<main>
-			<!-- START section -->
-			<section id="start_section">
-				<div id="title">
-					<h1>
-						<span id="line1">Hi,</span>
-						<span id="line2">I'm Quentin B.</span>
-						<span id="line3">and this is</span>
-						<span id="line4">what I
-							<a id="enter" href="#work_section" class="scrollTo">do</a>
-						</span>
-					</h1>
-				</div>
-			</section>
+	<main>
 
-			<!-- WORK section -->
-			<section id="work_section">
-				<h2>\ work</h2>
+		<!-- START section -->
+		<section id="start_section">
+			<div id="title">
+				<h1>
+					<span id="line1">Hi,</span>
+					<span id="line2">I'm Quentin B.</span>
+					<span id="line3">and this is</span>
+					<span id="line4">what I <a id="enter" href="#work_section" class="scrollTo">do</a></span>
+				</h1>
+			</div>
+		</section>
 
-				<div class="button-group filter-button-group">
-					<button class=" btn btn-dark ml-1 mb-3" data-filter="*">show all</button>
-					<button class=" btn btn-dark ml-1 mb-3" data-filter=".web">web</button>
-					<button class=" btn btn-dark ml-1 mb-3" data-filter=".video">video</button>
-				</div>
+		<!-- WORK section -->
+		<section id="work_section">
+			<h2>\ work</h2>
 
-				<div class="grid">
+			<div class="button-group filter-button-group">
+				<button class=" btn btn-dark ml-1 mb-3" data-filter="*">show all</button>
+				<button class=" btn btn-dark ml-1 mb-3" data-filter=".web">web</button>
+				<button class=" btn btn-dark ml-1 mb-3" data-filter=".video">video</button>
+			</div>
+
+			<div class="grid">
 
 				<div class="grid-item web">
 					<a data-fancybox="gallery" data-src="#youcantbuybuy" href="javascript:;">
@@ -92,10 +86,15 @@ include __DIR__ . '/assets/php/_general.php';
 									<div class="modalTitle d-md-flex">
 										<h4>Youcantbuybuy website</h4><small>- projet en cours -</small>
 									</div>
+									<p class="modalSkills">
+										Développement d'un site vitrine pour le photographe Kevin Buy<br />
+										\ Html5 \ CSS3 \ Javascript \ jQuery \ Masonry \ Fancybox
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
 				<div class="grid-item video">
 					<a data-fancybox="gallery" data-src="#deambulons" href="javascript:;">
@@ -118,32 +117,15 @@ include __DIR__ . '/assets/php/_general.php';
 									</p>
 									<a href="https://vimeo.com/248524139" target="_blank"><button class="plus d-sm-none btn btn-light btn-sm">+</button></a>
 								</div>
-							</figure>
-						</a>
-						<div style="display: none; background-image: url(./assets/img/deambulons.png);" id="deambulons" class="modalWork">
-							<div class="workTitle container">
-								<div class="row">
-									<div class="col-12 col-sm-11">
-										<div class="modalTitle d-md-flex">
-											<h4>Déambulons - Video corporate</h4>
-										</div>
-										<p class="modalSkills">
-											Vidéo corporate présentant les réalisations et les process de fabrication de mobilier et aménagemens en bambou.<br/>
-											<a href="www.deambulons.com">www.deambulons.com</a>
-										</p>
-										<a href="https://vimeo.com/248524139" target="_blank">
-											<button class="plus d-sm-none btn btn-light btn-sm">+</button>
-										</a>
-									</div>
-									<div class="arrow d-none d-sm-flex offset-11 col-1 offset-sm-0">
-										<a href="https://vimeo.com/248524139" target="_blank">
-											<i class="fa fa-lg fa-vimeo moreWork" aria-hidden="true"></i>
-										</a>
-									</div>
+								<div class="arrow d-none d-sm-flex offset-11 col-1 offset-sm-0">
+									<a href="https://vimeo.com/248524139" target="_blank">
+										<i class="fas fa-arrow-right moreWork"></i>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
 				<div class="grid-item web">
 					<a data-fancybox="gallery" data-src="#duBeauBoulot" href="javascript:;">
@@ -166,31 +148,15 @@ include __DIR__ . '/assets/php/_general.php';
 									</p>
 									<a href="#" target="_blank"><button class="plus d-sm-none btn btn-light btn-sm">+</button></a>
 								</div>
-							</figure>
-						</a>
-						<div style="display: none; background-image: url(./assets/img/faurecia-corpo.png);" id="faureciaCorpo" class="modalWork">
-							<div class="workTitle container">
-								<div class="row">
-									<div class="col-12 col-sm-11">
-										<div class="modalTitle d-md-flex">
-											<h4>Faurecia</h4>
-										</div>
-										<p class="modalSkills">
-											Video corporate réalisée pour l'équimentier afin de présenter son site de Caligny.
-										</p>
-										<a href="https://vimeo.com/187024444" target="_blank">
-											<button class="plus d-sm-none btn btn-light btn-sm">+</button>
-										</a>
-									</div>
-									<div class="arrow d-none d-sm-flex offset-11 col-1 offset-sm-0">
-										<a href="https://vimeo.com/187024444" target="_blank">
-											<i class="fa fa-lg fa-vimeo moreWork" aria-hidden="true"></i>
-										</a>
-									</div>
+								<div class="arrow d-none d-sm-flex offset-11 col-1 offset-sm-0">
+									<a href="#" target="_blank">
+										<i class="fas fa-arrow-right moreWork"></i>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
 				<div class="grid-item web">
 					<a data-fancybox="gallery" data-src="#faureciaCorpo" href="javascript:;">
@@ -213,33 +179,15 @@ include __DIR__ . '/assets/php/_general.php';
 									</p>
 									<a href="https://vimeo.com/187024444" target="_blank"><button class="plus d-sm-none btn btn-light btn-sm">+</button></a>
 								</div>
-							</figure>
-						</a>
-						<div style="display: none; background-image: url(./assets/img/le_bon_tri.png);" id="leBonTri" class="modalWork">
-							<div class="workTitle container">
-								<div class="row">
-									<div class="col-12 col-sm-11">
-										<div class="modalTitle d-md-flex">
-											<h4>le Bon Tri</h4><small>- projet de fin de formation -</small>
-										</div>
-										<div class="modalSkills">
-											<p>Le Bon Tri permet d'informer les utilisateurs sur les consignes de tri dans le Grand Lyon et de localiser les points de collectes</p>
-											<p>Stack technique : Symfony 4.4 / MySQL / HTML5 / CSS3 / Twig / JS /  Leaflet / Isotop / Bootstrap / jQuery</p>
-											<p>Réalisé avec 3 autres étudiants, j'ai principalemnt pris en charge l'intégration de la librairie Leaflet, utilisant les données fournies par l'API de la métropole du Grand Lyon (<a href="https://data.grandlyon.com" target="_blank">data.grandlyon.com</a>)</p>
-										</div>
-										<a href="https://github.com/kantunb/le-bon-tri" target="_blank">
-											<button class="plus d-sm-none btn btn-light btn-sm">+</button>
-										</a>
-									</div>
-									<div class="arrow d-none d-sm-flex offset-11 col-1 offset-sm-0">
-										<a href="https://github.com/kantunb/le-bon-tri" target="_blank">
-											<i class="fa fa-lg fa-github moreWork" aria-hidden="true"></i>
-										</a>
-									</div>
+								<div class="arrow d-none d-sm-flex offset-11 col-1 offset-sm-0">
+									<a href="https://vimeo.com/187024444" target="_blank">
+										<i class="fas fa-arrow-right moreWork"></i>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
 				<div class="grid-item web">
 					<a data-fancybox="gallery" data-src="#faureciaCorpo" href="javascript:;">
@@ -262,50 +210,55 @@ include __DIR__ . '/assets/php/_general.php';
 									</p>
 									<a href="https://vimeo.com/187024444" target="_blank"><button class="plus d-sm-none btn btn-light btn-sm">+</button></a>
 								</div>
-							</figure>
-						</a>
-						<div style="display: none; background-image: url(./assets/img/faurecia-corpo.png);" id="nestleEvent" class="modalWork">
-							<div class="workTitle container">
-								<div class="row">
-									<div class="col-12 col-sm-11">
-										<div class="modalTitle d-md-flex">
-											<h4>Nestlé</h4>
-										</div>
-										<p class="modalSkills">
-											Film événementiel - Soirée corporate pour Nestlé Mexique au Château de Bagnols (Beaujolais).<br/>
-										</p>
-										<a href="https://vimeo.com/231837347" target="_blank">
-											<button class="plus d-sm-none btn btn-light btn-sm">+</button>
-										</a>
-									</div>
-									<div class="arrow d-none d-sm-flex offset-11 col-1 offset-sm-0">
-										<a href="https://vimeo.com/231837347" target="_blank">
-											<i class="fa fa-lg fa-vimeo moreWork" aria-hidden="true"></i>
-										</a>
-									</div>
+								<div class="arrow d-none d-sm-flex offset-11 col-1 offset-sm-0">
+									<a href="https://vimeo.com/187024444" target="_blank">
+										<i class="fas fa-arrow-right moreWork"></i>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-			</section>
 
-			<!-- SKILLS section -->
-			<section id="skills_section">
-				<h2>\ skills</h2>
-				<div class="container">
-					<div class="row">
-						<div class="col-4 pl-0">
-							<h3>Langages</h3>
-						</div>
-						<div class="col-4 pl-0">
-							<h3>Formation</h3>
-						</div>
-						<div class="col-4 pl-0">
-							<h3>Compétences</h3>
-						</div>
+				<div class="grid-item web">
+					<a data-fancybox="gallery" href="./assets/img/le_bon_tri.png"><img src="./assets/img/le_bon_tri.png" alt="1"></a>
+				</div>
+				<div class="grid-item web">
+					<a data-fancybox="gallery" href="./assets/img/faurecia-formation.png"><img src="./assets/img/faurecia-formation.png" alt="1"></a>
+				</div>
+				<div class="grid-item video">
+					<a data-fancybox="gallery" href="./assets/img/5.jpg"><img src="./assets/img/5.jpg" alt="1"></a>
+				</div>
+				<div class="grid-item web">
+					<a data-fancybox="gallery" href="./assets/img/nestle.png"><img src="./assets/img/nestle.png" alt="1"></a>
+				</div>
+			</div>
+
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque nulla inventore iste
+				provident repudiandae illum ratione sit! Quaerat accusantium veniam porro enim magni, adipisci sequi
+				voluptatum, fugit velit temporibus eius.
+			</p>
+		</section>
+
+		<!-- SKILLS section -->
+		<section id="skills_section">
+			<h2>\ skills</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-4 pl-0">
+						<h3>Languages</h3>
 					</div>
+					<div class="col-4 pl-0">
+						<h3>Formations</h3>
+					</div>
+					<div class="col-4 pl-0">
+						<h3>Compétences</h3>
+					</div>
+					<div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque nulla inventore iste
+						provident repudiandae illum ratione sit! Quaerat accusantium veniam porro enim magni, adipisci
+						sequi
+						voluptatum, fugit velit temporibus eius.</div>
 				</div>
 			</div>
 		</section>
@@ -338,27 +291,16 @@ include __DIR__ . '/assets/php/_general.php';
 				<?php endif ?>
 
 				<form id="contact" autocomplete="on" action="./assets/php/contact.php" method="POST">
-					<?php $form = new Form ?>
+					<?php $form = new Form(isset($_SESSION['inputs']) ? $_SESSION['inputs'] : []) ?>
 					<div class="half">
 						<?= $form->text('name', 'Nom') ?>
 						<?= $form->email('email', 'Email'); ?>
 						<?= $form->text('subject', 'Sujet'); ?>
 						<?= $form->textarea('message', '30', '10', 'Message'); ?>
+						<!-- TODO : ReCaptcha
+						<button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit'>Submit</button> -->
 						<input type="submit" value="Envoyer" class="btn btn-dark" />
-				</div>
-					<!-- <li class="half">
-						<input type="text" class="form-control" placeholder="Nom" name="name" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : '' ?>" required />
-						<input type="email" class="form-control" name="email" id="" placeholder="Email" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : '' ?>" required />
-					</li>
-					<li>
-						<input type="text" class="form-control" placeholder="Sujet" name="subject" value="<?= isset($_SESSION['inputs']['subject']) ? $_SESSION['inputs']['subject'] : '' ?>" required />
-					</li>
-					<li>
-						<textarea name="message" class="form-control" id="" cols="30" rows="10" placeholder="Message" required /><?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : '' ?></textarea>
-					</li>
-					<li>
-						<input type="submit" value="Envoyer" class="btn btn-dark" />
-					</li> -->
+					</div>
 				</form>
 			</div>
 			<div id="map">
@@ -372,7 +314,7 @@ include __DIR__ . '/assets/php/_general.php';
 			</div>
 		</section>
 
-		</main>
+	</main>
 
 	<footer></footer>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -389,10 +331,12 @@ include __DIR__ . '/assets/php/_general.php';
 	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 	<!-- Fontawesome JS -->
 	<script src="https://kit.fontawesome.com/d099b76721.js" crossorigin="anonymous"></script>
+	<!-- ReCaptcha -->
+	<script src="https://www.google.com/recaptcha/api.js"></script>
 	<!-- Specific JavaScript -->
 	<script src="./assets/js/scripts.js" async></script>
 
-	</body>
+</body>
 
 </html>
 

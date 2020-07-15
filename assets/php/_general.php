@@ -2,6 +2,9 @@
 
 session_start();
 
-require dirname(dirname(__DIR__))."/class/Form.php";
+function dd($var){
+    var_dump($var);
+    die;
+}
 
-?>
+require dirname(dirname(__DIR__))."/class/Form.php";

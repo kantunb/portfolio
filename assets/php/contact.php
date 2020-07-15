@@ -1,6 +1,6 @@
 <?php
 
-// var_dump($_POST);
+require './_general.php';
 
 $errors = [];
 $senderName = $_POST['name'];
@@ -18,14 +18,12 @@ if(!array_key_exists('email', $_POST) | $senderEmail == '' | filter_var($senderE
 }
 
 if(!array_key_exists('subject', $_POST) | $subject == '') {
-    $errors['email'] = "Vous n'avez pas précisé l'objet de votre message";
+    $errors['subject'] = "Vous n'avez pas précisé l'objet de votre message";
 }
 
 if(!array_key_exists('message', $_POST) | $message == '') {
     $errors['message'] = "Votre message est vide";
 }
-
-session_start();
 
 if(!empty($errors)) {
     $_SESSION['errors'] = $errors;
@@ -41,7 +39,7 @@ if(!empty($errors)) {
     $recipientEmail = "quentin.brouillet@gmail.com";
     $headers = "FROM : $recipientEmail";
 
-    mail($recipientEmail, 'Formulaire de contact : ' . $subject, 'Nom: $senderName // Email: $senderEmail // Message: $message', $headers);
+    mail($recipientEmail, 'Formulaire de contact : ' . $subject, 'Nom: ' . $senderName . ' // Email: ' . $senderEmail . ' .  // Message: ' . $message, $headers);
     header('Location: ../../index.php#contact_section');
 }
 
