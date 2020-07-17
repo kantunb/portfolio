@@ -1,5 +1,6 @@
 window.onload = function () {
 
+    // Smooth scroll
     $(document).ready(function () {
         $('.scrollTo').on('click', function () { // Au clic sur un élément
             var page = $(this).attr('href'); // Page cible
@@ -11,6 +12,29 @@ window.onload = function () {
             return false;
         });
     });
+
+    // Toggle Mobile menu
+    // $('#menuToggleButton').on('click', () => {
+    //     event.preventDefault();
+    //     $('#menuToggle').animate({'left': 'toggle'}, {duration: 500, complete: function() { /* Animation complete */ }});
+    // });
+
+    $('#menuToggleButton').on('click', () => {
+        const menuButton = $('#menuToggleButton')
+        const menuBar = $('#menuBar');
+        const menuBarPosition = menuBar.css('left');
+        const intPosition = parseInt(menuBarPosition);
+        event.preventDefault();
+        if(intPosition > 0){
+            left = '0%';
+        }else{
+            left = '100%';
+        }
+        menuBar.animate({'left': left}, {duration: 500, complete: function() { /* Animation complete */ }});
+        menuButton.toggleClass('fa-bars').toggleClass('fa-times');
+    });
+
+
 
     // Isotope
 

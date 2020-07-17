@@ -30,24 +30,20 @@ include __DIR__ . '/assets/php/_general.php';
 
 	<header>
 		<nav>
-			<!-- DESKTOP menu -->
-			<div id="menu-desktop">
-				<div id="logo" class="menu">
-					<h2>QB.</h2>
+			<div id="menu-mobile" class="container">
+				<div class="row">
+					<div id="logo" class="menu col-2">
+						<h2>QB.</h2>
+					</div>
+					<div id="menuToggleButton" class="fa fa-2x fa-bars menu col-2 offset-8"></div>
 				</div>
-				<div class="menu">
-					<ul>
-						<li><a href="#start_section" class="scrollTo"><i class="fa fa-2x fa-home" aria-hidden="true"></i></a></li>
-						<li><a href="#work_section" class="scrollTo"><i class="fa fa-2x fa-eye" aria-hidden="true"></i></a></li>
-						<li><a href="#skills_section" class="scrollTo"><i class="fa fa-2x fa-cog" aria-hidden="true"></i></a></li>
-						<li><a href="#about_section" class="scrollTo"><i class="fa fa-2x fa-user" aria-hidden="true"></i></a></li>
-						<li><a href="#contact_section" class="scrollTo"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a></li>
-
-						<!-- <li><a href="#start_section" class="scrollTo">\ start</a></li>
-							<li><a href="#work_section" class="scrollTo">\ work</a></li>
-							<li><a href="#skills_section" class="scrollTo">\ skills</a></li>
-							<li><a href="#about_section" class="scrollTo">\ about</a></li>
-							<li><a href="#contact_section" class="scrollTo">\ contact</a></li> -->
+				<div id="menuBar" class="menu">
+					<ul class="flex">
+						<li><a href="#start_section" class="scrollTo"><i class="fa fa-lg fa-home" aria-hidden="true"></i></a></li>
+						<li><a href="#work_section" class="scrollTo"><i class="fa fa-lg fa-eye" aria-hidden="true"></i></a></li>
+						<li><a href="#skills_section" class="scrollTo"><i class="fa fa-lg fa-cog" aria-hidden="true"></i></a></li>
+						<li><a href="#about_section" class="scrollTo"><i class="fa fa-lg fa-user" aria-hidden="true"></i></a></li>
+						<li><a href="#contact_section" class="scrollTo"><i class="fa fa-lg fa-envelope" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 				<div id="social" class="menu">
@@ -57,6 +53,29 @@ include __DIR__ . '/assets/php/_general.php';
 					</ul>
 				</div>
 			</div>
+		</nav>
+
+		<!-- DESKTOP menu -->
+		<div id="menu-desktop">
+			<div id="logo" class="menu">
+				<h2>QB.</h2>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="#start_section" class="scrollTo"><i class="fa fa-2x fa-home" aria-hidden="true"></i></a></li>
+					<li><a href="#work_section" class="scrollTo"><i class="fa fa-2x fa-eye" aria-hidden="true"></i></a></li>
+					<li><a href="#skills_section" class="scrollTo"><i class="fa fa-2x fa-cog" aria-hidden="true"></i></a></li>
+					<li><a href="#about_section" class="scrollTo"><i class="fa fa-2x fa-user" aria-hidden="true"></i></a></li>
+					<li><a href="#contact_section" class="scrollTo"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+			<div id="social" class="menu">
+				<ul>
+					<li><a href="https://www.linkedin.com/in/quentinbrouillet/"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a></li>
+					<li><a href="https://github.com/kantunb"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
 		</nav>
 	</header>
 	<main>

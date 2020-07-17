@@ -85,9 +85,59 @@ figure figcaption, .modalSkills {
     font-size: 0.8em;
 }
 
-/* input, textarea {
-    margin-top: 1em;
-} */
+#logo h2 {
+    font-size: 2em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-weight: 600;
+}
+
+#menu-desktop{
+    display: none;
+}
+
+#social{
+    display: none;
+}
+
+#menuBar{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    left: 100%;
+}
+
+#menu-mobile {
+    background-color: black;
+    border-right: white solid 2px;
+    width: 100%;
+    padding: 0.5em 0.5em;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+}
+#menu-mobile a {
+    color: grey;
+}
+#menu-mobile a:hover {
+    font-weight: 600;
+    text-decoration: none;
+}
+.menu {
+    color: white;
+    text-align: center;
+}
+.menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.menu li {
+    padding: 1em;
+}
+
 .modalSkills {
     margin-bottom: 0em;
 }
@@ -99,10 +149,6 @@ figure figcaption, .modalSkills {
     margin-left: 0;
     margin-right: 0;
     padding: 2em 2em;
-}
-
-#menu-desktop {
-    display: none;
 }
 
 #start_section span {
@@ -232,6 +278,15 @@ figure figcaption, .modalSkills {
     }
 }
 
+@keyframes slideinMenu {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
 /* ---------- Media Queries ---------- */
 
 /* Par défaut mobil portrait */
@@ -250,35 +305,6 @@ Ecrans moyens: tablette */
     }
     nav {
         position: relative;
-    }
-    #menu-desktop {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: black;
-        border-right: white solid 2px;
-        height: 100%;
-        width: 6em;
-        padding: 2em 1em;
-        overflow: hidden;
-        position: fixed;
-    }
-    #menu-desktop a {
-        color: grey;
-    }
-    #menu-desktop a:hover {
-        font-weight: 600;
-        text-decoration: none;
-    }
-    .menu {
-        color: white;
-        text-align: center;
-    }
-    .menu ul {
-        padding: 0;
-    }
-    .menu li {
-        padding-top: 1em;
     }
     #title {
         padding-top: 10em;
@@ -310,6 +336,24 @@ Ecrans larges: desktop */
 @media(min-width: 62em) {
     h1 {
         font-size: 6em;
+    }
+    #menu-mobile{
+        display: none;
+    }
+    #social{
+        display: block;
+    }
+    #menu-desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: black;
+        border-right: white solid 2px;
+        height: 100%;
+        width: 6em;
+        padding: 2em 1em;
+        overflow: hidden;
+        position: fixed;
     }
     #title {
         padding-top: 5em;
